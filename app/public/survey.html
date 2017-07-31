@@ -43,6 +43,10 @@
      {
       background-color: black;
     }
+    .bfimg {
+      max-width: 100%;
+     
+    }
     </style>
 
 </head>
@@ -140,7 +144,7 @@
 
         var currentURL = window.location.origin;
         $.post(currentURL + "/api/friends", newFriend, function(data){
-              bootbox.alert("Your best friend is "+data.name+"<hr><img src='" + data.photo + "'>")
+              bootbox.alert("Your best friend is "+data.name+"<hr><img class='bfimg' src='" + data.photo + "'>")
               
         });
         $("#name").val('');
