@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
   
   <style type="text/css">
     body {
-      background: #eff;
+      background: #eeefff;
       font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
     } 
     p {
       font-style: italic;
       color: grey;
     }
     h1 {
-      font-family: 'Cherry Cream Soda', cursive;
+      font-family: 'Kaushan Script', cursive;
     }
     a, p, label, li {
       font-size: 16px;
@@ -47,6 +48,9 @@
       max-width: 100%;
      
     }
+    hr {
+      border-color: lightgray;
+    }
     </style>
 
 </head>
@@ -69,8 +73,9 @@
         <hr>
       <h3>Questions</h3>
       <p>all questions required</p>
+      <br>
       <div id="questions"></div>
-      <button id="submit" type="submit" class="btn btn-info">Click for your new BFF!</button>
+      <button id="submit" type="submit" class="btn btn-info">Your New BFF Awaits!</button>
       <a href="/api/friends">API Friends List</a>
       
 
@@ -80,7 +85,7 @@
   <script type="text/javascript">
 
   //questions array
-    var qArray = ["1. I love to talk to new people at parties", "2. I would prefer to find a deep friendship over an activity partner", "3. I like friends with whom I can just 'chill out' and watch a movie/tv marathon","4. I would like friends who want to go hiking, rock climbing, camping or do other outdoor sports/activities", "5. I am an avid sports fan", "6. Religion is an important part of my life","7. I like to keep up with pop culture such as the latest box office movies and celebrity gossip", "8. I think Donald Trump is a terrible human and president", "9. Dealing with crowds is worth it to enjoy events such as festivals, concerts, etc...", "10. I consume various news media and enjoy discussing current events"];
+    var qArray = ["1. I enjoy meeting new people at parties or other events", "2. I would prefer to find a deep friendship over an activity partner", "3. I like friends with whom I can just 'chill out' and watch a movie/tv marathon","4. I would like friends who want to go hiking, rock climbing, camping or do other outdoor sports/activities", "5. I am an avid sports fan", "6. Religion is an important part of my life","7. I like to keep up with pop culture such as the latest box office movies and celebrity gossip", "8. I think Donald Trump is a terrible human and president", "9. Dealing with crowds is worth it to enjoy events such as festivals, concerts, etc...", "10. I consume various news media and enjoy discussing current events"];
 
 
     displayQuestions();
